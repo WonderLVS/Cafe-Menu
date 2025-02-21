@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe menu "Cozy Corner"</title>
+    <link rel="icon" type="image/x-icon" href="icon-cafe.png">
+	<link rel="stylesheet" href=" https://fonts.googleapis.com/css?family=Roboto|Merriweather|Open+Sans|Playfair+Display">
+	<style>
+		*
+		{
+			box-sizing: border-box;
+		}
+	  
+	  
+		body, html
+		{
+			margin: 0;
+			padding: 0;
+			background-color: #d2b48c;
+		}
+		
+		h2, h3 
+		{
+			text-align: center;
+			color: #8b0000;
+			font-family: "Merriweather";
+		}
+		
+		p, li, ul
+		{
+			color: #4b2e2e;
+			font-family: "Roboto";
+		}
+
+		span.head
+		{
+			color: #ffdb58;
+		}
+		
+		ul 
+		{
+			list-style-type: none;
+		}
+		
+		li 
+	    {
+			margin-bottom: 7px;
+		}
+	  
+	  
+		.menu 
+		{
+			display: flex;
+			justify-content: space-between;
+		}
+		
+		.food, .drinks
+		{
+			flex: 1;
+		}
+		
+		.price 
+		{ 
+			float: right; 
+			font-weight: bold; 
+		}
+	  
+	  
+		header
+		{
+			max-width: 200vw;
+			margin: 10;
+			padding: 20px;
+			text-align: center;
+			font-size: 35px;
+			color: #f8e8d0;
+			background-color: #6d4c41;
+		}
+		
+		main
+		{
+			border-radius: 10px;
+			margin: 25px;
+			padding: 15px;
+			background-color: #f5f5dc;
+			text-align: left;
+			box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+		}
+		
+		footer 
+		{
+			padding: 15px;
+			margin: 25px;
+			background-color: #d2b48c;
+			text-align: center;
+		}
+	  
+	  
+		@media (max-width: 900px) 
+		{
+			.menu 
+			{
+				align-items: center;
+				flex-direction: column;
+			}
+		}
+	</style>
+</head>
+
+<body>
+    <header>
+        <h1>Cafe <span class="head">"Cozy Corner"</span></h1>
+    </header>
+    
+    <main>
+        <h2>Menu:</h2>
+        
+		<div class="menu">
+        <div class="food">
+		<section>
+            <h3>Snacks:</h3>
+            <ul>
+                <li>
+                    <strong>Tomato bruschetta - <span class="price">$3</span></strong>
+                    <p>Crusty bread with tomatoes, basil and olive oil.</p>
+                </li>
+                <li>
+                    <strong>Cheese fingers - <span class="price">$4</span></strong>
+                    <p>Served with barbecue sauce.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Main dishes:</h3>
+            <ul>
+                <li>
+                    <strong>Beef steak - <span class="price">$15</span></strong>
+                    <p>Beef steak with choice of garnish.</p>
+                </li>
+                <li>
+                    <strong>Pasta Carbonara - <span class="price">$9</span></strong>
+                    <p>Pasta with bacon, parmesan cheese and cream sauce.</p>
+                </li>
+            </ul>
+        </section>
+		</div>
+
+        <div class="drinks">
+		<section>
+            <h3>Drinks:</h3>
+            <ul>
+                <li>
+                    <strong>Cappuccino - <span class="price">$3</span></strong>
+                    <p>Classic coffee drink with milk foam.</p>
+                </li>
+                <li>
+                    <strong>Berry morsels - <span class="price">$2.5</span></strong>
+                    <p>Refreshing cranberry and currant morsel.</p>
+                </li>
+            </ul>
+        </section>
+		</div>
+		</div>
+    </main>
+
+    <footer>
+        <h2>Contacts:</h2>
+        <p>&#128205; Address: Kyiv, Pleasant str. 10</p>
+        <p>&#128222; Phone number: +380 (99) 123-45-67</p>
+    </footer>
+</body>
+</html>
